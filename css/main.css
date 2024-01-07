@@ -1,0 +1,265 @@
+:root {
+    font-family: 'Lato', sans-serif;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+img {
+    width: 100%;
+}
+
+
+/*=========HEADER=========*/
+
+.padre {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: rgb(15, 140, 224);
+}
+
+.banderas>img,
+.redes>img {
+    align-items: center;
+    width: 25px;
+    gap: 5px;
+}
+
+.logo {
+    width: 150px;
+
+}
+
+.sitio {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sitio h1 {
+
+    font-size: calc(2rem+2vh);
+    font-weight: 700;
+}
+
+/*=========Navegacion=========*/
+.navegacion {
+    background-color: rgb(15, 140, 224);
+    padding: 10px;
+}
+
+.navegacion a {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.navegacion a:hover {
+
+    background-color: white;
+    color: rgb(15, 140, 224);
+}
+
+
+/*=========HEADER=========*/
+
+/*========MAIN=========*/
+.banner {
+    position: relative;
+}
+
+.foto {
+    z-index: -1;
+}
+
+.titulo,
+.subtitulo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.subtitulo {
+    top: 90px;
+}
+
+main>h1 {
+    padding: 31px;
+    text-align: center;
+}
+
+section p {
+    padding: 10px;
+}
+
+
+/*======imagenes=====*/
+
+.viajereco h3,
+.viajebol h3 {
+    background-color: rgb(15, 140, 224);
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 4px;
+    color: white;
+}
+
+/*imagenes*/
+
+/*MAIN*/
+
+/*======FOOTER========*/
+
+
+
+footer {
+    padding: 20px;
+}
+
+footer nav {
+    padding: 10px;
+}
+
+footer {
+    background-color: rgb(15, 140, 224);
+
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+footer,
+h4,
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+}
+
+
+footer a:hover {
+    color: black;
+}
+
+
+/*FOOTER*/
+
+
+
+
+/* ============== 768px=======*/
+@media screen and (min-width:768px) {
+
+    section {
+        padding: 30px;
+    }
+
+    .containerViajesReco,
+    .containerViajesBolsillo {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .viajereco {
+        width: 48%;
+    }
+
+    .viajebol {
+        width: 48%;
+    }
+    footer {
+      
+        display: flex;
+        justify-content: space-between;
+        
+  
+    }
+
+
+}
+
+/*768px*/
+/* ============== 992px=======*/
+@media screen and (min-width:992px) {
+
+    /*==========header========= */
+    .banderas>img,
+    .redes>img {
+        width: 30px;
+    }
+
+    .logo {
+        width: 250px;
+    }
+
+    .sitio {
+        flex-direction: row;
+    }
+
+    .navegacion {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navegacion a:hover {
+        background-color: rgb(15, 140, 224);
+        color: rgb(143, 152, 159);
+    }
+
+    /*header*/
+    .containerViajesReco {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .viajereco {
+        width: 31%;
+    }
+
+    .viajebol {
+        width: 23%;
+    }
+    footer {
+      
+        display: flex;
+        justify-content: space-between;
+  
+    }
+}
+
+/*992px*/
+/* ============== 1200px=======*/
+@media screen and (min-width:1200px) {}
+
+/*1200px*/
