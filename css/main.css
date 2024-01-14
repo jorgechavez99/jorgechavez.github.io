@@ -35,12 +35,9 @@ img {
     width: 25px;
     gap: 5px;
 }
-
 .logo {
-    width: 150px;
-
+     width: 150px;
 }
-
 .sitio {
     padding: 30px;
     display: flex;
@@ -49,35 +46,59 @@ img {
     flex-direction: column;
 }
 
-.sitio h1 {
-
-    font-size: calc(2rem+2vh);
+.sitio p {
+    font-size: 2.5rem;
     font-weight: 700;
 }
-
+/*=========HEADER=========*/
 /*=========Navegacion=========*/
-.navegacion {
-    background-color: rgb(15, 140, 224);
+#menuBurger {
+    width: 50px;
+}
+.burgerMenu {
     padding: 10px;
+    width: 100%;
+    background-color: rgb(15, 140, 224);
+    cursor: pointer;
+}
+#navegacion {
+    display: none;
+    width: 100%;
 }
 
-.navegacion a {
+.navVisible{
+    padding: 10px;
+    display: flex!important;
+    color: black;
+    justify-content: center;
+    background-color: rgb(15, 140, 224);
+    flex-direction: column;
+    text-align: center; 
+}
+#navegacion a {
     padding: 10px;
     margin: 10px;
     display: flex;
     justify-content: center;
+    text-align: center; 
     text-decoration: none;
     color: white;
 }
 
-.navegacion a:hover {
+#navegacion a:hover {
 
     background-color: white;
     color: rgb(15, 140, 224);
 }
 
+.cerrar {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: medium;
+}
+/*=========Navegacion=========*/
 
-/*=========HEADER=========*/
 
 /*========MAIN=========*/
 .banner {
@@ -105,9 +126,11 @@ img {
     top: 90px;
 }
 
-main>h1 {
+main>p {
     padding: 31px;
     text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 section p {
@@ -136,32 +159,25 @@ section p {
 
 footer {
     padding: 20px;
+    background-color: rgb(15, 140, 224);
 }
 
 footer nav {
     padding: 10px;
-}
-
-footer {
-    background-color: rgb(15, 140, 224);
-
-}
-
-footer nav {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    list-style: none;
 }
-
-
 footer,
-h4,
+ul,
 a {
+    text-align: center;
     text-decoration: none;
     color: white;
     font-weight: 100;
+    list-style: none;
 }
 
 
@@ -169,15 +185,44 @@ footer a:hover {
     color: black;
 }
 
-
 /*FOOTER*/
-
-
-
 
 /* ============== 768px=======*/
 @media screen and (min-width:768px) {
 
+    .burgerMenu {
+        display: none;
+    }
+
+    #navegacion {
+        display: flex;
+        background-color: rgb(15, 140, 224);
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    #navegacion ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        list-style: none;
+    }
+    #navegacion a {
+        padding: 10px;
+        margin: 10px;
+        text-decoration: none;
+        color: white;
+        
+    }
+    
+    #navegacion a:hover {
+        background-color: white;
+        color: rgb(15, 140, 224);
+    }
+    .cerrar {
+       display: none;
+    }
     section {
         padding: 30px;
     }
@@ -200,13 +245,8 @@ footer a:hover {
       
         display: flex;
         justify-content: space-between;
-        
-  
     }
-
-
 }
-
 /*768px*/
 /* ============== 992px=======*/
 @media screen and (min-width:992px) {
@@ -225,16 +265,32 @@ footer a:hover {
         flex-direction: row;
     }
 
-    .navegacion {
+    #navegacion {
         display: flex;
-        justify-content: center;
-    }
-
-    .navegacion a:hover {
         background-color: rgb(15, 140, 224);
-        color: rgb(143, 152, 159);
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+       
     }
-
+    #navegacion ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        list-style: none;
+    }
+    #navegacion a {
+        padding: 10px;
+        margin: 10px;
+        text-decoration: none;
+        color: white;
+        
+    }
+    
+    #navegacion a:hover {
+        background-color: white;
+        color: rgb(15, 140, 224);
+    }
     /*header*/
     .containerViajesReco {
         display: flex;

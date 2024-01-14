@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
     <title>Practica de Maquetación</title>
 </head>
 
@@ -19,7 +19,6 @@
                 <img src="assets/banderas/ae.png" alt="bandera de palestina" title="palestina">
                 <img src="assets/banderas/af.png" alt="bandera de afganistan" title="afganistan">
                 <img src="assets/banderas/ai.png" alt="bandera de fiyi" title="fiyi">
-
             </div>
             <div class="redes">
                 <img src="assets/redes/Twitter-icon.png" alt="icon twitter" title="twitter">
@@ -31,27 +30,32 @@
             <div class="logo">
                 <img src="assets/logo/logo.jpg" alt="logo del sitio" title="logo">
             </div>
-            <h1>Nombre del sitio</h1>
+            <p>Nombre del sitio</p>
         </div>
-        <nav class="navegacion">
-            <a href="index.html">Inicio</a>
-            <a href="index.html">Servicios</a>
-            <a href="index.html">Productos</a>
-            <a href="index.html">Contacto</a>
-        </nav>
     </header>
-    <main>
-        <div class="banner">
-            <div class="foto">
-                <img src="assets/banner/6.jpg" alt="montañas">
-            </div>
-            <h1 class="titulo">Este es el título</h1>
-            <p class="subtitulo">Este ese el subtítulo</p>
+    <button class="burgerMenu">
+        <img src="assets/burger/icon-burger.png" alt="icono-menuBuger" id="menuBurger">
+    </button>
+    <nav id="navegacion">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html">Servicios</a></li>
+            <li><a href="index.html">Productos</a></li>
+            <li><a href="index.html">Contacto</a></li>
+        </ul>
+        <button class="cerrar">Cerrar</button>
+    </nav>
+    <div class="banner">
+        <div class="foto">
+            <img src="assets/banner/6.jpg" alt="montañas">
         </div>
-        <h1>
+        <h1 class="titulo">Este es el título</h1>
+        <p class="subtitulo">Este ese el subtítulo</p>
+    </div>
+    <main>
+        <p>
             Viajes baratos
-        </h1>
-
+        </p>
         <section>
             <h2>Viajes recomendados</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsa aliquam corporis? Corrupti, facere
@@ -62,36 +66,49 @@
                 voluptates! Numquam, incidunt? Excepturi nulla ipsum eum dolorem eos debitis iste magni totam minima.
             </p>
             <div class="containerViajesReco">
-                <div class="viajereco">
+                <article class="viajereco">
                     <h3>Viaje uno</h3>
-                    <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    <div>
+                        <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?</p>
-                </div>
-                <div class="viajereco">
+                </article>
+                <article class="viajereco">
                     <h3>Viaje dos</h3>
-                    <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    <div>
+                        <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?</p>
-                </div>
-                <div class="viajereco">
+                </article>
+                <article class="viajereco">
                     <h3>Viaje tres</h3>
-                    <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    <div>
+                        <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?</p>
-                </div>
-                <div class="viajereco">
+                </article>
+                <article class="viajereco">
                     <h3>Viaje cuatro</h3>
-                    <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    <div>
+                        <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?</p>
-                </div>
-                <div class="viajereco">
+                </article>
+                <article class="viajereco">
                     <h3>Viaje cinco</h3>
-                    <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    <div>
+                        <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?</p>
-                </div>
-                <div class="viajereco">
+                </article>
+                <article class="viajereco">
                     <h3>Viaje seis</h3>
-                    <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    <div>
+                        <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?</p>
-                </div>
+                </article>
+            </div>
         </section>
         <section>
             <h2>Viajes para todos los bolsillos</h2>
@@ -103,93 +120,107 @@
                 voluptates! Numquam, incidunt? Excepturi nulla ipsum eum dolorem eos debitis iste magni totam minima.
             </p>
             <div class="containerViajesBolsillo">
-                <div class="viajebol">
+                <article class="viajebol">
                     <h3>Viaje uno</h3>
-                    <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    <div>
+                        <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?</p>
-                </div>
-                <div class="viajebol">
+                </article>
+                <article class="viajebol">
                     <h3>Viaje dos</h3>
-                    <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    <div>
+                        <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?</p>
-                </div>
-                <div class="viajebol">
+                </article>
+                <article class="viajebol">
                     <h3>Viaje tres</h3>
-                    <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    <div>
+                        <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?</p>
-                </div>
-                <div class="viajebol">
+                </article>
+                <article class="viajebol">
                     <h3>Viaje cuatro</h3>
-                    <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    <div>
+                        <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?</p>
-                </div>
-                <div class="viajebol">
+                </article>
+                <article class="viajebol">
                     <h3>Viaje cinco</h3>
-                    <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    <div>
+                        <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?</p>
-                </div>
-                <div class="viajebol">
+                </article>
+                <article class="viajebol">
                     <h3>Viaje seis</h3>
-                    <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    <div>
+                        <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?</p>
-                </div>
-                <div class="viajebol">
+                </article>
+                <article class="viajebol">
                     <h3>Viaje siete</h3>
-                    <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    <div>
+                        <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?</p>
-                </div>
-                <div class="viajebol">
+                </article>
+                <article class="viajebol">
                     <h3>Viaje ocho</h3>
-                    <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    <div>
+                        <img src="assets/viajes/viajes-7.jpg" alt="castillo en montaña" title="castillo">
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?</p>
-                </div>
+                </article>
+            </div>
         </section>
 
     </main>
     <footer>
-        <div class="conocenos">
-            <nav>
-                <h4>Conócenos</h4>
-                <a href="index.html">Trabaja con nosotros</a>
-                <a href="index.html">Sobre nosotros</a>
-                <a href="index.html">Sobre</a>
-
+            <nav class="conocenos">
+                <ul>
+                    <p>Conócenos</p>
+                    <li><a href="index.html">Trabaja con nosotros</a></li>
+                    <li><a href="index.html">Sobre nosotros</a></li>
+                    <li><a href="index.html">Sobre</a></li>
+                </ul>
             </nav>
-        </div>
-        <div class="gana">
-            <nav>
-                <h4>Gana dinero con nosotros</h4>
-                <a href="index.html">Sobre nosotros</a>
-                <a href="index.html">Trabaja con nosotros</a>
-                <a href="index.html">Sobre</a>
-                <a href="index.html">Trabaja con nosotros</a>
-                <a href="index.html">Sobre nosotros</a>
+        
+            <nav class="gana">
+                <ul>
+                    <p>Gana dinero con nosotros</p>
+                    <li><a href="index.html">Sobre nosotros</a></li>
+                    <li><a href="index.html">Trabaja con nosotros</a></li>
+                    <li> <a href="index.html">Sobre</a></li>
+                    <li><a href="index.html">Trabaja con nosotros</a></li>
+                    <li><a href="index.html">Sobre nosotros</a></li>
 
+                </ul>
             </nav>
-        </div>
-        <div class="Metodos">
-            <nav>
-                <h4>Métodos de pago</h4>
-                <a href="index.html">Trabaja con nosotros</a>
-                <a href="index.html">Sobre nosotros</a>
-                <a href="index.html">Sobre</a>
-                <a href="index.html">Sobre nosotros</a>
-
+            <nav class="Metodos">
+                <ul>
+                    <p>Métodos de pago</p>
+                    <li><a href="index.html">Trabaja con nosotros</a></li>
+                    <li><a href="index.html">Sobre nosotros</a></li>
+                    <li><a href="index.html">Sobre</a></li>
+                    <li><a href="index.html">Sobre nosotros</a></li>
+                </ul>
             </nav>
-        </div>
-        <div class="Necesitas">
-            <nav>
-                <h4>¿Necesitas ayuda?</h4>
-                <a href="index.html">Trabaja con nosotros</a>
-                <a href="index.html">Trabaja con nosotros</a>
-                <a href="index.html">Sobre nosotros</a>
-                <a href="index.html">Sobre nosotros</a>
-                <a href="index.html">Sobre</a>
-                <a href="index.html">Sobre nosotros</a>
-
+            <nav class="Necesitas">
+                <ul>
+                    <p>¿Necesitas ayuda?</p>
+                    <li><a href="index.html">Trabaja con nosotros</a></li>
+                    <li><a href="index.html">Trabaja con nosotros</a></li>
+                    <li><a href="index.html">Sobre nosotros</a></li>
+                    <li><a href="index.html">Sobre nosotros</a></li>
+                    <li><a href="index.html">Sobre</a></li>
+                    <li><a href="index.html">Sobre nosotros</a></li>
+                </ul>             
             </nav>
-        </div>
-
     </footer>
     <script src="js/main.js"></script>
 </body>
